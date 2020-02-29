@@ -1,0 +1,40 @@
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-2">
+        <div class="vertical-menu">
+          <a routerLink="giftorder" >Place Gift Card Order</a>
+          <a routerLink="main">View Gift Card Orders</a>
+          <a routerLink="contact">Contact Us</a>
+          <a routerLink="aboutus">About Us</a>
+            
+          </div>
+          
+      </div>
+      <div class="col-sm-10 ">
+      <table class="table">
+            <!-- <thead class="thead-dark"> -->
+              <thead>
+              <tr>
+                <th scope="col">S.No</th>
+                <th scope="col">Buyars Name</th>
+                <th scope="col">Shipping Address</th>
+                <th scope="col">City</th>
+                <th scope="col">Amount</th>
+                <th scope="col">Phone</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor = "let friend of friends">
+                <th scope="row">1</th>
+                <td>{{ friend.id }}</td>
+                <td>{{ friend.name}}</td>
+                <td>@mdo</td>
+                <td>{{ friend.location }}</td>
+                <td>{{ friend.score }}</td>
+              </tr>
+              
+            </tbody>
+          </table>
+      </div>
+    </div>
+  </div>
