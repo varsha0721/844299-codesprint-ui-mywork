@@ -1,0 +1,45 @@
+<!-- Full Page division -->
+<div class="container-flex">
+  <!-- Form division -->
+  <div class="container px-5" style="margin-top: 30px;">
+      <div id="singleMedia" class="container tab-pane active">
+        <br>
+        <h1 class="text-center"> Upload Your Media </h1>
+        <!-- Form body -->
+        <form class="py-5" [formGroup]="uploadMediaForm" (ngSubmit)="onSubmitMedia()">
+          <!-- Post Media Feild -->
+          <div class="form-group row">
+            <label for="postPic" class="col-sm-2 col-form-label"> Post Media </label>
+            <div class="col-sm-10">
+              <form>
+                <input [(ngModel)]="postPic" (change)="uploadMedia($event)" id="postPic" formControlName="postPic" name="postPic" type="file">
+              </form>
+              <input type="submit" class="field btn btn-info" value="Upload">
+            </div>
+          </div>
+          <!-- Title Feild -->
+          <div class="form-group row">
+            <label for="title" class="col-sm-2 col-form-label"> Title </label>
+            <div class="col-sm-10">
+              <input [(ngModel)]="title" formControlName="title" name="title" type="text" class="form-control field" id="title" placeholder="Enter Title">
+            </div>
+          </div>
+          <!-- Description Feild -->
+          <div class="form-group row">
+            <label for="description" class="col-sm-2 col-form-label">Description</label>
+            <div class="col-sm-10">
+              <textarea [(ngModel)]="description" formControlName="description" class="form-control field" rows="5"
+                id="description"></textarea>
+            </div>
+          </div>
+          <!-- Tags Feild -->
+          <div class="form-group row">
+            <label for="tags" class="col-sm-2 col-form-label">Tags</label>
+            <div class="col-sm-10">
+              <input [(ngModel)]="tags" formControlName="tags" type="text" class="form-control field" id="tags">
+            </div>
+          </div>
+        </form>
+      </div>
+  </div>
+</div>

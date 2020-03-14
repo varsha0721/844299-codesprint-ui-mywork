@@ -1,0 +1,36 @@
+input[type=text], input[type=password]
+{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.vertical-menu {
+  width: auto;
+  height: auto;
+  overflow-y: auto;
+  overflow-x: auto;
+  padding: 0px;
+  margin: 0px;
+  font-size: 20px;
+  text-align: center;
+  /* font-style: italic; */
+}
+
+.vertical-menu a {
+  background-color: rgb(245, 176, 176);
+  color: black;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+}
+
+.vertical-menu a:hover {
+  background-color: rgb(250, 127, 127);
+}
+
+

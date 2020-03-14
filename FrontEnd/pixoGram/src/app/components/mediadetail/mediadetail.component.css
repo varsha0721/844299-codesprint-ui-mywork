@@ -1,0 +1,22 @@
+.div{
+    text-align: center;
+    width: 100px;
+    height: 60px;
+}
+
+.container1{
+    text-align: center;
+    margin-top: 20px;
+}
+.wrapper{
+    border-color: rgb(58, 193, 235);
+    border-style: solid;
+    border-width: 1px;
+    margin-right: 5vw;
+    margin-left: 5vw;
+}
+
+.display-5{
+    text-align: center;
+    height: 50px;
+}
